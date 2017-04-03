@@ -6,8 +6,8 @@ $(function() {
   }
  
   // Place your code here
-  $("#roll-dice").click(function() {
-    $("#content").append(roll);
+ $("#roll-dice").click(function() {
+    ("#content").append(roll);
      $("#first-die").attr("src", "images/" +roll()+ ".png");
      $("#second-die").attr("src", "images/" +roll()+ ".png");
   });
