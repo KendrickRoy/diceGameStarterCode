@@ -7,9 +7,11 @@ $(function() {
  
   // Place your code here
  $("#roll-dice").click(function() {
-    ("#content").append(roll);
-     $("#first-die").attr("src", "images/" +roll()+ ".png");
-     $("#second-die").attr("src", "images/" +roll()+ ".png");
+    var roll1 = roll();
+    var roll2 = roll();
+     $("#first-die").attr("src", "images/" +roll1+ ".png");
+     $("#second-die").attr("src", "images/" +roll2+ ".png");
+     $("#result").html(roll1 + roll2);
   });
   
     
