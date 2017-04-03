@@ -8,9 +8,9 @@ $(function() {
   // Place your code here
   $("#roll-dice").click(function() {
     $("#content").append(roll);
-    
+     $("img").attr("src", "images/" +roll()+ ".png");
   });
-    
+  
     
   
 
