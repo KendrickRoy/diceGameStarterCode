@@ -12,6 +12,10 @@ $(function() {
      $("#first-die").attr("src", "images/" +roll1+ ".png");
      $("#second-die").attr("src", "images/" +roll2+ ".png");
      $("#result").html(roll1 + roll2);
+    if (roll1===roll2){
+    $("#match").html("match");
+      
+    }
   });
   
     
